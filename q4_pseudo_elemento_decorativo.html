@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elemento</title>
+    <style>
+        .decorado {
+            position: relative;
+            padding-left: 15px;
+            font-family: Arial, sans-serif;
+        }
+
+        .decorado::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 5px;
+            height: 100%;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2 class="decorado">Título com Linha</h2>
+
+</body>
+
+</html>
